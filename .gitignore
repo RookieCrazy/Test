@@ -1,0 +1,5 @@
+#忽略上传的目录
+/seclee/db.sqlite3
+/seclee/__pycache__
+/seclee/*/__pycache__
+/seclee/*/migrations
