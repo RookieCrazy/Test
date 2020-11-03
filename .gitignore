@@ -18,3 +18,6 @@ helloworld/migrations/__init__.py
 helloworld/migrations/0001_initial.py
 helloworld/migrations/__pycache__/__init__.cpython-37.pyc
 helloworld/migrations/__pycache__/0001_initial.cpython-37.pyc
+*__pycache__
+*.sqlite3
+.gitignore
