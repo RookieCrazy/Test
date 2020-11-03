@@ -1,5 +1,11 @@
-from django.urls.conf import path
-from helloworld import views
+from django.urls import path
+from . import views
+
 urlpatterns = [
-    path('', views.hello),
+    path('', views.hello, name='hello'),
 ]
+
+
+# urlpatterns = [
+#     path('hello', views.hello, name='hello'),
+# ]
