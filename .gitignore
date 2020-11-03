@@ -1,3 +1,4 @@
-E://Program_Test//seclee//db.sqlite3
-E://Program_Test//seclee//seclee//__pycache__
-E://Program_Test//seclee//helloworld//migrations
+#忽略上传的目录
+/seclee/db.sqlite3
+/seclee/seclee/__pycache__
+/seclee/helloworld/migrations
