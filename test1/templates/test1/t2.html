@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>Github_users_info</title>
 </head>
+
 <body>
-    <h1>ceshiceshi22222222222</p>
+    <h1>Github_users_info</h1>
+    <div class="container">
+        <div class="row">
+            {% for i in api %}
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{i.avatar_url}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{i.login}}</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
 </body>
+
 </html>

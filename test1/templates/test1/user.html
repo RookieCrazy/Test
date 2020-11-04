@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% comment %} <p>Hi {{user}} !</p> {% endcomment %}
+<!-- <p>Hi {{username}} !</p> -->
+<div class="card" style="width: 16rem;">
+    <img src="{{username.avatar_url}}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{username.name}}</h5>
+        <p class="card-text">{{username.blog}}</p>
+        <p class="card-text">{{username.location}}</p>
+        <p class="card-text">{{username.followers}}</p>
+        <a href="{{username.html_url}}" class="btn btn-primary">about</a>
+    </div>
+</div>
+{% endblock %}

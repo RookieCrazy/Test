@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>Github Users</p>
+<div class="container">
+    <div class="row">
+        <br />
+        {% for i in api %}
+        <div class="col-sm-3">
+            <br />
+            <div class="card" style="width: 16rem;">
+                <img src="{{i.avatar_url}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.login}}</h5>
+                    <p class="card-text">No cross, no crown.</p>
+                    <a href="{{i.html_url}}" class="btn btn-primary" >about</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

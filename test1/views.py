@@ -1,12 +1,17 @@
-from django.http.response import HttpResponse
+from django.http import request
+from django.http.response import HttpResponse, JsonResponse
 from django.shortcuts import render
+from django.template.context import RequestContext
+import json
+import requests
 
 
 # Create your views here.
 def test1(request):
-    return render(request, "test1/t1.html", {
-        "title": "Test web",
-        "content": "ceshiceshiceshi718049519"
+    api_request = requests.get("https://api.github.com/users?since=0")
+    api = json.loads(api_request.content)
+    return render(request, "test1/t2.html", {
+        "api": api
     })
 
 
